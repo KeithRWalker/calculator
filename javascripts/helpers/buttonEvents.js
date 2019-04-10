@@ -22,33 +22,35 @@ const addNumber = (e) => {
 }
 
 const attachEvents = () => {
-  oneButton.addEventListener('click', addNumber);
-  twoButton.addEventListener('click', addNumber);
-  threeButton.addEventListener('click', addNumber);
-  fourButton.addEventListener('click', addNumber);
-  fiveButton.addEventListener('click', addNumber);
-  sixButton.addEventListener('click', addNumber);
-  sevenButton.addEventListener('click', addNumber);
-  eightButton.addEventListener('click', addNumber);
-  nineButton.addEventListener('click', addNumber);
-  zeroButton.addEventListener('click', addNumber);
-  addButton.addEventListener('click', (e) => {
-    e.target.className += " selectedButton";
-    calc.setMathType('add');
-  });
-  subtractButton.addEventListener('click', (e) => {
-    e.target.className += " selectedButton";
-    calc.setMathType('subtract');
-  });
-  multiplyButton.addEventListener('click', (e) => {
-    e.target.className += " selectedButton";
-    calc.setMathType('multiply');
-  });
-  divideButton.addEventListener('click', (e) => {
-    e.target.className += " selectedButton";
-    calc.setMathType('divide');
-  });
-  equalsButton.addEventListener('click', () => {
-    calc.calculate();
-  });
+    oneButton.addEventListener('click', addNumber);
+    twoButton.addEventListener('click', addNumber);
+    threeButton.addEventListener('click', addNumber);
+    fourButton.addEventListener('click', addNumber);
+    fiveButton.addEventListener('click', addNumber);
+    sixButton.addEventListener('click', addNumber);
+    sevenButton.addEventListener('click', addNumber);
+    eightButton.addEventListener('click', addNumber);
+    nineButton.addEventListener('click', addNumber);
+    zeroButton.addEventListener('click', addNumber);
+
+    addButton.addEventListener('click', (e) => {
+        e.target.className += " selectedButton";
+        calc.setMathType('add');
+    });
+    subtractButton.addEventListener('click', (e) => {
+        e.target.className += " selectedButton";
+        calc.setMathType('subtract');
+    });
+    multiplyButton.addEventListener('click', (e) => {
+        e.target.className += " selectedButton";
+        calc.setMathType('multiply');
+    });
+    divideButton.addEventListener('click', (e) => {
+        e.target.className += " selectedButton";
+        calc.setMathType('divide');
+    });
+        equalsButton.addEventListener('click', () => {
+        calc.calculate();
+    });
 };
+export default { attachEvents };

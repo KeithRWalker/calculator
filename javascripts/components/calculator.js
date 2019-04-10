@@ -1,7 +1,13 @@
-const addNumber = () => {};
+const addNumber = (num) => {
+    console.log(num);
+};
 
-const setMathType = () => {};
+const setMathType = (newType) => {
+    console.log(newType);
+};
 
-const calculate = () => {};
+const calculate = () => {
+    console.log('do math')
+};
 
 export default {addNumber, setMathType, calculate}
