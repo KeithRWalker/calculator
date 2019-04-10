@@ -2,3 +2,10 @@ body{
     background-color: black;
     color: aliceblue;
 }
+.row{
+    padding: 10px;
+}
+
+.calculator{
+    margin: 0 auto;
+}
